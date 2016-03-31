@@ -1,0 +1,9 @@
+---
+- name: register CUDA repository
+  shell: wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.5-18_amd64.deb && dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb
+
+- name: install CUDA
+  apt: name=cuda update_cache=yes
+
+- name: write environmant variables to bash profile
+  copy: src=./cuda.sh dest=/etc/profile.d/

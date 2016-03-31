@@ -4,4 +4,4 @@
   apt_repository: repo='ppa:ubuntu-x-swat/x-updates' state=present update_cache=yes
 
 - name: NVIDIA | Install package
-  apt: pkg=nvidia-331 state=present
+  apt: pkg=nvidia-{{ nvidia_version}} state=present

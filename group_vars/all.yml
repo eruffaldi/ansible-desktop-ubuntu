@@ -20,3 +20,10 @@ php5:
 mariadb:
   current_password: ''
   root_password: dev
+
+ros_release: "indigo"
+ros_package: "ros-base"
+
+# Optionally use a mirror for the ROS packages
+ros_apt_uri: "http://packages.ros.org/ros/ubuntu"
+ros_apt_key: "https://raw.githubusercontent.com/ros/rosdistro/master/ros.key"
