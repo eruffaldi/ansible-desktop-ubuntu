@@ -17,7 +17,7 @@ Run
 If you want to change anything :
 
 ```shell
-$ curl -L https://github.com/eruffaldi/ansible-desktop-ubuntu/install.sh | sh
+$ curl -L https://github.com/eruffaldi/ansible-ros-gpu-ubuntu/install.sh | sh
 ```
 
 And enter your password.
@@ -51,7 +51,7 @@ Custom installation
 
 if you want to customize the installation to suit your needs, you have to clone this repository :
 
-    $ git clone https://github.com/eruffaldi/ansible-desktop-ubuntu.git
+    $ git clone https://github.com/eruffaldi/ansible-ros-gpu-ubuntu.git
 
 And you have to edit the file `site.yml` and comment line the list roles. For example :
 
@@ -74,8 +74,6 @@ And you have to edit the file `site.yml` and comment line the list roles. For ex
     - pinta     # Gimp little
     - latex     # Latex and ide texmaker
     - nvidia    # Drivers owner
-    - adst      # Application for series https://github.com/lesmyrmidons/AdstSF2
-#    - hhvm
     - web
 #    - mongodb
 #    - composer
