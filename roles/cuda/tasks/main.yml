@@ -1,6 +1,6 @@
 ---
 - name: register CUDA repository
-  shell: wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.5-18_amd64.deb && dpkg -i cuda-repo-ubuntu1404_7.5-18_amd64.deb
+  shell: {{cuda_fetch_deb}} && dpkg -i {{cuda_deb}}
 
 - name: install CUDA
   apt: name=cuda update_cache=yes

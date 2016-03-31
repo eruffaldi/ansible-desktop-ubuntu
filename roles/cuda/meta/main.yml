@@ -1,0 +1,17 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: eruffaldi
+  description: CUDA Installer
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+    versions:
+    - precise
+    - trusty
+  categories:
+    - development
+    - system

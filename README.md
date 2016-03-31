@@ -1,5 +1,8 @@
-Automated Desktop Setup
-=======================
+Automated Desktop Setup for Vision with ROS
+===========================================
+Original: https://github.com/lesmyrmidons/ansible-desktop-ubuntu
+
+Modified by Emanuele Ruffaldi for ROS and CUDA
 
 Requirements
 -----------
@@ -14,7 +17,7 @@ Run
 If you want to change anything :
 
 ```shell
-$ curl -L http://git.karbouin.net/kevin.arbouin/desktop-home/blob/master/install.sh | sh
+$ curl -L https://github.com/eruffaldi/ansible-desktop-ubuntu/install.sh | sh
 ```
 
 And enter your password.
@@ -24,7 +27,6 @@ Default installation
 
 This project will install the following packages:
 
-    * aptitude
     * bash-completion
     * openssh-server
     * vim
@@ -33,31 +35,23 @@ This project will install the following packages:
     * curl
     * wget
     * htop
-    * ack-grep
-    * ccze
-    * tmux
     * terminator
-    * tig
     * unzip, tar, gzip, bzip2
-    * nfs-kernel-server, nfs-common
-    * pwgen
     * Java 1.7.x (Oracle)
     * Virtualbox (Oracle)
-    * LAMP (MariaDB), pear, phpmyadmin, Composer
     * MongoDB
     * Drivers NVIDIA
+    * Drivers CUDA
     * nodejs
     * Latex, texmaker
-    * Pinta (equivalent Paint.NET for Windows)
-    * ADST (https://github.com/lesmyrmidons/AdstSF2)
-    * HHVM
+    * ROS Indigo
 
 Custom installation
 -------------------
 
 if you want to customize the installation to suit your needs, you have to clone this repository :
 
-    $ git clone git@github.com:lesmyrmidons/ansible-desktop-ubuntu.git
+    $ git clone https://github.com/eruffaldi/ansible-desktop-ubuntu.git
 
 And you have to edit the file `site.yml` and comment line the list roles. For example :
 
